@@ -35,13 +35,13 @@ This repository contains the "_To Do List API_" project, developed in Golang. It
 ```bash
   cd go-todo-api
 ```
-3. Install dependencies:
+<!-- 3. Install dependencies:
 ```bash
   npm install
-```
-<!-- 4. The API uses the MySQL database to store the information. If you do not have MySQL installed, consult the documentation available _[here](https://dev.mysql.com/doc/)_ or change the file "_src/config/config.js_" to database of your choice.
+``` -->
+<!-- 4. The API uses the MySQL database to store the information. If you do not have MySQL installed, consult the documentation available _[here](https://dev.mysql.com/doc/)_ or change the file "_src/config/config.js_" to database of your choice. -->
 
-5. Create the database:
+<!-- 5. Create the database:
 ```bash
   npx sequelize db:create
 ```
@@ -65,66 +65,45 @@ This repository contains the "_To Do List API_" project, developed in Golang. It
 9. Launch the application:
 ```bash
   npm start
-```
+``` -->
 
 ### API usage:
 
-1. ...:
+<!-- 1. ...:
 ![flavio-bianchetti-blogs-api-project](https://docs.google.com/uc?id=)
 
 2. ...:
 ![flavio-bianchetti-blogs-api-project](https://docs.google.com/uc?id=)
 
 3. ...:
-![flavio-bianchetti-blogs-api-project](https://docs.google.com/uc?id=)
+![flavio-bianchetti-blogs-api-project](https://docs.google.com/uc?id=) -->
 
 ### Available resources:
-- **Login:**
-  - **POST /login**
-    - **request:** 
-    - **response:**
-- **User:**
-  - **POST /user**
-    - **request:**
-    - **response:**
-  - **GET - /user**
-    - **header:**
-    - **response:**
-  - **GET - /user/:id**
-    - **header:**
-    - **response:**
-  - **DELETE - /user/me**
-    - **header:**
-    - **response:**
-- **Categories:**
-  - **POST /categories**
-    - **header:**
-    - **request:**
-    - **response:**
-  - **GET - /categories**
-    - **header:**
-    - **response:**
-- **Post:**
-  - **POST /post**
-    - **header:**
-    - **request:**
-    - **response:**
-  - **GET - /post**
-    - **header:**
-    - **response:**
-  - **GET - /post/:id**
-    - **header:**
-    - **response:**
-  - **PUT - /post/:id**
-    - **header:**
-    - **request:**
-    - **response:**
-  - **DELETE - /post/:id**
-    - **header:**
-    - **response:**
-  - **GET - /post/search?q=:searchTerm**
-    - **header:**
-    - **response:** -->
+- **Check API health:**
+  - **URL:** /ping
+  - **Method:** GET
+  - **response code:** 200
+  - **response:** pong
+- **Create an registry:**
+  - **URL:** /
+  - **Method:** POST
+  - **response code:** 201 
+  - **response:** object created - json
+- **Read all registries:**
+  - **URL:** /
+  - **Method:** GET
+  - **response code:** 200
+  - **response:** all registries - json
+- **Read one registry by id:**
+  - **URL:** /:id
+  - **Method** GET
+  - **response code:** 200
+  - **response:** selected registry - json
+- **Delete registry by id:**
+  - **URL:** /:id
+  - **Method:** DELETE
+  - **response code:** 200
+  - **response:** none
 
 ### Author's considerations:
 
