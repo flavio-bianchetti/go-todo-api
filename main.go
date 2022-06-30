@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	mux : controllers.Register()
+	mux := controllers.Register()
 	http.ListenAndServe(":3000", mux)
 }

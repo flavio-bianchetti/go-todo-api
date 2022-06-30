@@ -7,7 +7,7 @@ import (
 	"github.com/flavio-bianchetti/go-todo-api/views"
 )
 
-func ping() http.HandleFunc {
+func ping() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodGet {
 			data := views.Response {
