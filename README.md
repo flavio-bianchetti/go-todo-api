@@ -1,15 +1,15 @@
-#To Do List API
+# To Do List API
 
 This repository contains the "_To Do List API_" project, developed in Golang. It aims to put into practice the knowledge learned about the language.
 
 
-###Author:
+### Author:
 
 - _[Flávio Bianchetti](https://www.linkedin.com/in/flaviobianchetti/)_
 
 ---
 
-###Were used in the construction of this page:
+### Were used in the construction of this page:
 
 <section>
   <a href="https://go.dev/" target="_blank">
@@ -24,7 +24,7 @@ This repository contains the "_To Do List API_" project, developed in Golang. It
 
 ---
 
-###Installation
+### Installation
 
 1. Open the terminal, in a directory of your choice, and clone the project:
 ```bash
@@ -67,7 +67,7 @@ This repository contains the "_To Do List API_" project, developed in Golang. It
   npm start
 ```
 
-###API usage:
+### API usage:
 
 1. ...:
 ![flavio-bianchetti-blogs-api-project](https://docs.google.com/uc?id=)
@@ -78,7 +78,7 @@ This repository contains the "_To Do List API_" project, developed in Golang. It
 3. ...:
 ![flavio-bianchetti-blogs-api-project](https://docs.google.com/uc?id=)
 
-###Available resources:
+### Available resources:
 - **Login:**
   - **POST /login**
     - **request:** 
@@ -126,7 +126,7 @@ This repository contains the "_To Do List API_" project, developed in Golang. It
     - **header:**
     - **response:** -->
 
-###Author's considerations:
+### Author's considerations:
 
 - There is no schedule of changes planned for this project.
 - This project is under development.
