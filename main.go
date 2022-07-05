@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/flavio-bianchetti/go-todo-api/controllers"
-	models "github.com/flavio-bianchetti/go-todo-api/models"
+	"github.com/flavio-bianchetti/go-todo-api/models"
 	_ "github.com/go-sql-driver/mysql"
 )
 
