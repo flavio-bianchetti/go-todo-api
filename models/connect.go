@@ -1,4 +1,4 @@
-package model
+package models
 
 import (
 	"database/sql"
@@ -11,7 +11,7 @@ import (
 
 var con *sql.DB
 
-func Connect() *sql.DB { // função Connect com instãncia de sql.DB
+func Connect() *sql.DB {
 
 	err := godotenv.Load()
 	if err != nil {
@@ -24,9 +24,7 @@ func Connect() *sql.DB { // função Connect com instãncia de sql.DB
 	PORT := os.Getenv("DBPORT")
 	DATABASE := os.Getenv("DBDATABASE")
 	dataSourceName := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", USER, PASSWORD, HOST, PORT, DATABASE)
-	fmt.Println(dataSourceName)
 	db, err := sql.Open("mysql", dataSourceName)
-	fmt.Println(db, "\n", err)
 	if err != nil {
 		log.Fatal(err)
 	}
