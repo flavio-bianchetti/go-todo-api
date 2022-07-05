@@ -35,6 +35,41 @@ This repository contains the "_To Do List API_" project, developed in Golang. It
 ```bash
   cd go-todo-api
 ```
+
+3. The database used in this project is _[MySQL](https://dev.mysql.com/doc/)_. The file "_database.sql_" located in the root folder of this project contains the database creation script:
+```SQL
+CREATE DATABASE IF NOT EXISTS go_todo;
+
+USE go_todo;
+
+CREATE TABLE IF NOT EXISTS todo
+(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    description VARCHAR(1000) NOT NULL
+);
+
+INSERT INTO todo (name, description)
+VALUES ('Supermarket', 'milk, bread, egg, pasta, meat, cookies and fruit'),
+    ('Meeting - work team', 'today, at 5 pm'),
+    ('Football game', 'Friday, at 7 pm');
+
+```
+
+4. Configure the _[dotenv](https://www.npmjs.com/package/dotenv)_ file with your information, as shown below:
+```javascript
+  DBUSER=root
+  DBPASSWORD=1234
+  DBHOST=localhost
+  DBPORT=3306
+  DBDATABASE=go_todo
+```
+
+5. Launch the application:
+```bash
+  go run main.go
+```
+
 <!-- 3. Install dependencies:
 ```bash
   npm install
